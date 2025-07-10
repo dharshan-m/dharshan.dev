@@ -39,14 +39,11 @@ React Native app with invoice generation and wood material calculator
 ### ✅ Nutolicious.shop – Custom E-Commerce Frontend
 Product listing, filtering, cart system with a polished UI
 
-### ✅ HR Management System
-Custom web app for managing employees, roles, and attendance logs
-
 ---
 
 ## 🧱 Tech Stack
 
-| Frontend      | Backend        | Database  | Tools           |
+| Frontend      | Backend        | Database  | Tools            |
 |---------------|----------------|-----------|------------------|
 | React.js      | Node.js        | MongoDB   | Git, GitHub      |
 | Tailwind CSS  | Express.js     | Firebase  | Figma, Postman   |
@@ -58,10 +55,8 @@ Custom web app for managing employees, roles, and attendance logs
 
 Want to collaborate or need help with a project?
 
-📧 Email: [your.email@example.com]  
-🌐 Portfolio: [yourportfolio.com]  
-🐙 GitHub: [https://github.com/dharshan-m]  
-📱 WhatsApp: [+91-XXXXXXXXXX]
+📧 Email: [dharshanmohan2704.com]   
+📱 WhatsApp: [+91-9788915620]
 
 ---
 
