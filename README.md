@@ -1,73 +1,76 @@
-# Welcome to your Lovable project
+# 🚀 Dharshan – Freelance Developer Portfolio
 
-## Project info
+Welcome to my freelance portfolio!  
+I’m **Dharshan**, a passionate front-end and full-stack developer offering professional services in web and mobile application development.
 
-**URL**: https://lovable.dev/projects/81a3a4ce-3563-4bfa-88be-5921282f54f6
+---
 
-## How can I edit this code?
+## 👨‍💻 About Me
 
-There are several ways of editing your application.
+With 1.5 years of hands-on experience, I specialize in building fast, modern, and responsive applications using:
 
-**Use Lovable**
+- **React.js** & **Tailwind CSS**
+- **React Native** for mobile apps
+- **Node.js**, **Express**, and **MongoDB** for back-end APIs
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/81a3a4ce-3563-4bfa-88be-5921282f54f6) and start prompting.
+I’ve worked with startups and businesses to bring their digital ideas to life with clean code, real-world logic, and scalable architecture.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🛠️ Services I Offer
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- 🌐 Web App Development (React, MERN Stack)
+- 📱 Mobile App Development (React Native)
+- 🎨 Responsive UI Design (Tailwind, CSS3)
+- 🐛 Bug Fixes & Feature Additions
+- 🔐 API Integration & Backend Setup
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 📂 Featured Projects
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### ✅ TrackEasy – Role-Based Expense Tracker
+Built with MERN Stack  
+Includes JWT Auth, Admin/User dashboards, and visual reports
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### ✅ WoodenHut App – Interior Cost Estimator
+React Native app with invoice generation and wood material calculator
 
-# Step 3: Install the necessary dependencies.
-npm i
+### ✅ Nutolicious.shop – Custom E-Commerce Frontend
+Product listing, filtering, cart system with a polished UI
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+### ✅ HR Management System
+Custom web app for managing employees, roles, and attendance logs
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🧱 Tech Stack
 
-**Use GitHub Codespaces**
+| Frontend      | Backend        | Database  | Tools           |
+|---------------|----------------|-----------|------------------|
+| React.js      | Node.js        | MongoDB   | Git, GitHub      |
+| Tailwind CSS  | Express.js     | Firebase  | Figma, Postman   |
+| React Native  | REST APIs      |           | Vercel, Render   |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 📬 Contact
 
-This project is built with:
+Want to collaborate or need help with a project?
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+📧 Email: [your.email@example.com]  
+🌐 Portfolio: [yourportfolio.com]  
+🐙 GitHub: [https://github.com/dharshan-m]  
+📱 WhatsApp: [+91-XXXXXXXXXX]
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/81a3a4ce-3563-4bfa-88be-5921282f54f6) and click on Share -> Publish.
+## 📸 Screenshots
 
-## Can I connect a custom domain to my Lovable project?
+> _(Optional section – you can add screenshots of your work here)_
 
-Yes, you can!
+---
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 📜 License
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+This project and all work shown is © 2025 Dharshan. All rights reserved.
