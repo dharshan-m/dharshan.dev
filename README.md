@@ -60,12 +60,6 @@ Want to collaborate or need help with a project?
 
 ---
 
-## 📸 Screenshots
-
-> _(Optional section – you can add screenshots of your work here)_
-
----
-
 ## 📜 License
 
 This project and all work shown is © 2025 Dharshan. All rights reserved.
