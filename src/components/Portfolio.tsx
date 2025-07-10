@@ -19,6 +19,13 @@ import {
 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
 const Portfolio = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,6 +51,12 @@ const Portfolio = () => {
       features: ["React + TypeScript", "Tailwind CSS", "Component-based", "Single Page Apps"]
     },
     {
+      icon: <Database className="w-8 h-8 text-primary" />,
+      title: "WordPress Development",
+      description: "Custom WordPress themes, plugins, e-commerce solutions, and website optimization.",
+      features: ["Custom Themes", "Plugin Development", "E-commerce Solutions", "Site Optimization"]
+    },
+    {
       icon: <Wrench className="w-8 h-8 text-primary" />,
       title: "Bug Fixes & Features",
       description: "Resolve issues, add new features, and improve performance of existing applications.",
@@ -58,19 +71,71 @@ const Portfolio = () => {
   };
 
   const projects = [
-    "TrackEasy (SaaS Role-Based Expense Tracker)",
-    "Woodenhut wood calculator and invoice generator App",
-    "Job Portal web application",
-    "Nutolicious E-Commerce Site",
-    "woodenhut.in E-commerce site",
-    "digri.ai",
-    "fitnethix.com",
-    "sece.ac.in",
-    "sedt.ac.in",
-    "jeanpierrefux.com",
-    "jemptpro.com",
-    "legacynutritionandtraining.com",
-    "diegorodriguezfitness.com"
+    {
+      name: "TrackEasy (SaaS Role-Based Expense Tracker)",
+      type: "Full Stack Application",
+      icon: <Database className="w-8 h-8 text-primary" />
+    },
+    {
+      name: "Woodenhut wood calculator and invoice generator App",
+      type: "Mobile Application",
+      icon: <Smartphone className="w-8 h-8 text-primary" />
+    },
+    {
+      name: "Job Portal - web application",
+      type: "Full Stack Application",
+      icon: <Database className="w-8 h-8 text-primary" />
+    },
+    {
+      name: "Nutolicious E-Commerce Site",
+      type: "WordPress Project",
+      icon: <Globe className="w-8 h-8 text-primary" />
+    },
+    {
+      name: "woodenhut.in E-commerce site",
+      type: "WordPress Project",
+      icon: <Globe className="w-8 h-8 text-primary" />
+    },
+    {
+      name: "digri.ai",
+      type: "WordPress Project",
+      icon: <Globe className="w-8 h-8 text-primary" />
+    },
+    {
+      name: "fitnethix.com",
+      type: "Web Application",
+      icon: <Code className="w-8 h-8 text-primary" />
+    },
+    {
+      name: "sece.ac.in",
+      type: "WordPress Project",
+      icon: <Globe className="w-8 h-8 text-primary" />
+    },
+    {
+      name: "sedt.ac.in",
+      type: "WordPress Project",
+      icon: <Globe className="w-8 h-8 text-primary" />
+    },
+    {
+      name: "jeanpierrefux.com",
+      type: "WordPress Project",
+      icon: <Globe className="w-8 h-8 text-primary" />
+    },
+    {
+      name: "jemptpro.com",
+      type: "WordPress Project",
+      icon: <Globe className="w-8 h-8 text-primary" />
+    },
+    {
+      name: "legacynutritionandtraining.com",
+      type: "WordPress Project",
+      icon: <Globe className="w-8 h-8 text-primary" />
+    },
+    {
+      name: "diegorodriguezfitness.com",
+      type: "WordPress Project",
+      icon: <Globe className="w-8 h-8 text-primary" />
+    }
   ];
 
   const navItems = [
@@ -117,7 +182,7 @@ const Portfolio = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
             <div className="text-2xl font-bold gradient-text">
-              Dharshan P M
+              Dharshan.Dev
             </div>
             
             {/* Desktop Navigation */}
@@ -297,7 +362,7 @@ const Portfolio = () => {
             <p className="text-xl text-muted-foreground">Comprehensive development solutions for your business</p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
               <Card key={index} className="glass-effect border-primary/20 card-hover">
                 <CardContent className="p-6">
@@ -329,27 +394,34 @@ const Portfolio = () => {
       <section id="projects" className="section-padding bg-card/50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">Projects Portfolio</h2>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 gradient-text">Projects</h2>
             <p className="text-xl text-muted-foreground">Some of the amazing projects I've worked on</p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((project, index) => (
-              <Card key={index} className="glass-effect border-primary/20 card-hover">
-                <CardContent className="p-6">
-                  <div className="flex items-start justify-between mb-4">
-                    <FolderOpen className="w-8 h-8 text-primary" />
-                    <ExternalLink className="w-5 h-5 text-muted-foreground hover:text-primary cursor-pointer" />
-                  </div>
-                  <h3 className="font-bold mb-2 line-clamp-2">{project}</h3>
-                  <div className="flex items-center space-x-2 text-sm text-muted-foreground">
-                    <Database className="w-4 h-4" />
-                    <span>Full-Stack Project</span>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+          <Carousel className="w-full max-w-5xl mx-auto">
+            <CarouselContent className="-ml-4">
+              {projects.map((project, index) => (
+                <CarouselItem key={index} className="pl-4 md:basis-1/2 lg:basis-1/3">
+                  <Card className="glass-effect border-primary/20 card-hover h-full">
+                    <CardContent className="p-6 flex flex-col h-full">
+                      <div className="flex items-start justify-between mb-4">
+                        {project.icon}
+                        <ExternalLink className="w-5 h-5 text-muted-foreground hover:text-primary cursor-pointer" />
+                      </div>
+                      <h3 className="font-bold mb-2 line-clamp-2 flex-grow">{project.name}</h3>
+                      <div className="flex items-center space-x-2 text-sm text-muted-foreground mt-auto">
+                        <span className="px-2 py-1 bg-primary/20 text-primary rounded text-xs">
+                          {project.type}
+                        </span>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
 
@@ -416,7 +488,7 @@ const Portfolio = () => {
       <footer className="py-8 border-t border-border">
         <div className="max-w-6xl mx-auto px-4 text-center">
           <p className="text-muted-foreground">
-            © 2024 Dharshan P M. Built with React.js & Tailwind CSS
+            © 2024 Dharshan.Dev. Built with React.js & Tailwind CSS
           </p>
         </div>
       </footer>
